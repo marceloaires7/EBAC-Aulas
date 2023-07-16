@@ -17,6 +17,10 @@ def plota_pivot_table(df, value, index, func, ylabel, xlabel, opcao='nada'):
     st.pyplot(fig=plt)
     return None
 
+st.set_page_config(page_title= 'SINASC Rondônia',
+                   page_icon= 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Flag_map_of_Rondonia.png/715px-Flag_map_of_Rondonia.png',
+                   layout= 'wide')
+
 st.write('# Análise SINASC')
 
 sinasc = pd.read_csv('./input/SINASC_RO_2019.csv')
@@ -26,10 +30,29 @@ sinasc.DTNASC = pd.to_datetime(sinasc.DTNASC)
 min_data = sinasc.DTNASC.min()
 max_data = sinasc.DTNASC.max()
 
-st.write(min_data)
-st.write(max_data)
+# st.write(min_data)
+# st.write(max_data)
+
+# datas = pd.DataFrame(sinasc.DTNASC.unique(), columns=['DTNASC'])
+# datas.sort_values(by='DTNASC', inplace=True, ignore_index=True)
+# st.write(datas)
 
 
+data_inicial = st.sidebar.date_input('Data inicial',
+                             value= min_data,
+                             min_value= min_data,
+                             max_value= max_data)
+
+data_final = st.sidebar.date_input('Data inicial',
+                           value= max_data,
+                           min_value= min_data,
+                           max_value= max_data)
+
+st.write('Data inicial: ', data_inicial)
+st.write('Data final: ', data_final)
+
+sinasc = sinasc[(sinasc['DTNASC'] <= pd.to_datetime(data_final))
+                & (sinasc['DTNASC'] >= pd.to_datetime(data_inicial))]
 
 plota_pivot_table(sinasc, 'IDADEMAE', 'DTNASC', 'mean', 'quantidade de nascimento','data de nascimento')
 plota_pivot_table(sinasc, 'IDADEMAE', ['DTNASC', 'SEXO'], 'mean', 'media idade mae','data de nascimento','unstack')
