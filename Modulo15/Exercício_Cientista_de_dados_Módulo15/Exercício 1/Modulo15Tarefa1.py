@@ -8,14 +8,14 @@ import streamlit as st
 # Funções para Visualizar os Gráficos.
 def plota_pivot_table(df, value, index, func, ylabel, xlabel, opcao='nada'):
     if opcao == 'nada':
-        pd.pivot_table(df, values=value, index=index, aggfunc=func).plot(figsize=[15, 5])
+        pd.pivot_table(df, values=value, index=index, aggfunc=func).plot(figsize=(15, 5))
     elif opcao == 'sort':
-        pd.pivot_table(df, values=value, index=index, aggfunc=func).sort_values(value).plot(figsize=[15, 5])
+        pd.pivot_table(df, values=value, index=index, aggfunc=func).sort_values(value).plot(figsize=(15, 5))
     elif opcao == 'unstack':
-        pd.pivot_table(df, values=value, index=index, aggfunc=func).unstack().plot(figsize=[15, 5])
+        pd.pivot_table(df, values=value, index=index, aggfunc=func).unstack().plot(figsize=(15, 5))
     plt.ylabel(ylabel)
     plt.xlabel(xlabel)
-    st.pyplot(fig=plt)
+    st.pyplot(fig=plt) # type: ignore
     return None
 
 # Layout da Página.
