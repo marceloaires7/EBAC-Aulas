@@ -144,7 +144,7 @@ group_labels = ['Group 1', 'Group 2', 'Group 3']
 
 # Create distplot with custom bin_size
 fig = ff.create_distplot(
-        hist_data, group_labels, bin_size=[.1, .25, .5])
+        hist_data, group_labels, bin_size=[.1, .25, .5]) # type: ignore
 
 # Plot!
 col2.write('**Gráfico 2:**')

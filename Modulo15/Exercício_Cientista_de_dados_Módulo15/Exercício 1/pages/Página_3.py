@@ -41,7 +41,7 @@ st.write('---')
 '## :green[:smile: Código 17:]'
 '**Retorna paramentos em QUERY:**'
 st.experimental_get_query_params()
-{"show_map": ["True"], "selected": ["asia", "america"]}
+{"show_map": ["True"], "selected": ["asia", "america"]}  # type: ignore
 
 st.write('---')
 
