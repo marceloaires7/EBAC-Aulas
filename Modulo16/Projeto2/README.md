@@ -7,3 +7,4 @@ A análise para a concessão de cartões de crédito é um assunto de extrema im
 Vamos utlizar desses dados fornecidos em um desafio do site [Kaggle](https://www.kaggle.com/), uma plataforma que promove desafios de ciência de dados, oferecendo prêmios em dinheiro para os melhores colocados. O link original está [aqui](https://www.kaggle.com/rikdifos/credit-card-approval-prediction).
 
 O objetivo será construir o melhor modelo preditivo para identificar o risco de inadimplência, será definido como inadimplência atraso de pagamento de maior ou igual a 90 dias em um período de 12 meses. Sendo que essa apresentação será para auxiliar o cliente, ou seja, para a pessoa que busca o emprestimo no banco, para que ela avalie suas próprias decisões.
+---
