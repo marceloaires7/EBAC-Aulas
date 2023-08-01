@@ -1,10 +1,8 @@
 # EBAC-Aulas
 
----
 
 # Projeto 2 - Previsão de Renda
 
----
 
 A análise para a concessão de cartões de crédito é um assunto de extrema importância no setor financeiro. Para que o limite de crédito seja liberado, o banco ou algum outro tipo de industria financeira, utilizam informações pessoais e dados fornecidos pelos candidatos para prever a probabilidade de inadimplência futura e comportamento de endividamento com o cartão.
 
