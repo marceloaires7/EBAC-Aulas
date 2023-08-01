@@ -11,3 +11,5 @@ Vamos utlizar desses dados fornecidos em um desafio do site [Kaggle](https://www
 O objetivo será construir o melhor modelo preditivo para identificar o risco de inadimplência, será definido como inadimplência atraso de pagamento de maior ou igual a 90 dias em um período de 12 meses. Sendo que essa apresentação será para auxiliar o cliente, ou seja, para a pessoa que busca o emprestimo no banco, para que ela avalie suas próprias decisões.
 
 ---
+
+https://github.com/marceloaires7/EBAC-Aulas/assets/54866313/9e738821-4730-493e-8d80-30d33b8fe6a1
