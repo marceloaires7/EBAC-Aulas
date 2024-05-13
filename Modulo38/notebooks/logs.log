@@ -9613,3 +9613,188 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2024-05-09 18:03:47,676:INFO:Preloading libraries
 2024-05-09 18:03:47,678:INFO:Set up data.
 2024-05-09 18:03:47,687:INFO:Set up index.
+2024-05-13 16:44:14,665:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-13 16:44:14,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-13 16:44:14,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-13 16:44:14,666:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-13 16:44:31,574:INFO:Initializing load_model()
+2024-05-13 16:44:31,574:INFO:load_model(model_name=LR Model Aula 5 062022, platform=None, authentication=None, verbose=True)
+2024-05-13 16:44:49,143:INFO:Initializing load_model()
+2024-05-13 16:44:49,143:INFO:load_model(model_name=LR Model Aula 5 062022, platform=None, authentication=None, verbose=True)
+2024-05-13 16:47:23,485:INFO:Initializing load_model()
+2024-05-13 16:47:23,485:INFO:load_model(model_name=Final GBC Model 02Jun2022, platform=None, authentication=None, verbose=True)
+2024-05-13 16:47:24,330:INFO:Initializing predict_model()
+2024-05-13 16:47:24,330:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001381B96EA50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sexo', 'posse_de_veiculo',
+                                             'posse_de_imovel', 'tipo_renda',
+                                             'educacao', 'estado_civil',
+                                             'tipo_residencia'],
+                                    tra...
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 GradientBoostingClassifier(learning_rate=0.4, max_depth=8,
+                                            max_features='sqrt',
+                                            min_impurity_decrease=0.05,
+                                            min_samples_leaf=2,
+                                            min_samples_split=9,
+                                            n_estimators=30, random_state=123,
+                                            subsample=0.2))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000013826A2C040>)
+2024-05-13 16:47:24,330:INFO:Checking exceptions
+2024-05-13 16:47:24,330:INFO:Preloading libraries
+2024-05-13 16:47:24,331:INFO:Set up data.
+2024-05-13 16:47:24,367:INFO:Set up index.
+2024-05-13 16:47:31,730:INFO:Initializing load_model()
+2024-05-13 16:47:31,730:INFO:load_model(model_name=Final GBC Model 02Jun2022, platform=None, authentication=None, verbose=True)
+2024-05-13 16:47:31,792:INFO:Initializing predict_model()
+2024-05-13 16:47:31,792:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001381BB55F50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sexo', 'posse_de_veiculo',
+                                             'posse_de_imovel', 'tipo_renda',
+                                             'educacao', 'estado_civil',
+                                             'tipo_residencia'],
+                                    tra...
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 GradientBoostingClassifier(learning_rate=0.4, max_depth=8,
+                                            max_features='sqrt',
+                                            min_impurity_decrease=0.05,
+                                            min_samples_leaf=2,
+                                            min_samples_split=9,
+                                            n_estimators=30, random_state=123,
+                                            subsample=0.2))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001382697F7E0>)
+2024-05-13 16:47:31,792:INFO:Checking exceptions
+2024-05-13 16:47:31,792:INFO:Preloading libraries
+2024-05-13 16:47:31,792:INFO:Set up data.
+2024-05-13 16:47:31,825:INFO:Set up index.
+2024-05-13 16:48:04,107:INFO:Initializing load_model()
+2024-05-13 16:48:04,107:INFO:load_model(model_name=Final GBC Model 02Jun2022, platform=None, authentication=None, verbose=True)
+2024-05-13 16:48:04,167:INFO:Initializing predict_model()
+2024-05-13 16:48:04,167:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001382F327ED0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sexo', 'posse_de_veiculo',
+                                             'posse_de_imovel', 'tipo_renda',
+                                             'educacao', 'estado_civil',
+                                             'tipo_residencia'],
+                                    tra...
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 GradientBoostingClassifier(learning_rate=0.4, max_depth=8,
+                                            max_features='sqrt',
+                                            min_impurity_decrease=0.05,
+                                            min_samples_leaf=2,
+                                            min_samples_split=9,
+                                            n_estimators=30, random_state=123,
+                                            subsample=0.2))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001382697E3E0>)
+2024-05-13 16:48:04,167:INFO:Checking exceptions
+2024-05-13 16:48:04,168:INFO:Preloading libraries
+2024-05-13 16:48:04,168:INFO:Set up data.
+2024-05-13 16:48:04,201:INFO:Set up index.
+2024-05-13 16:48:08,453:INFO:Initializing load_model()
+2024-05-13 16:48:08,453:INFO:load_model(model_name=Final GBC Model 02Jun2022, platform=None, authentication=None, verbose=True)
+2024-05-13 16:48:08,518:INFO:Initializing predict_model()
+2024-05-13 16:48:08,519:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000013825A06ED0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sexo', 'posse_de_veiculo',
+                                             'posse_de_imovel', 'tipo_renda',
+                                             'educacao', 'estado_civil',
+                                             'tipo_residencia'],
+                                    tra...
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 GradientBoostingClassifier(learning_rate=0.4, max_depth=8,
+                                            max_features='sqrt',
+                                            min_impurity_decrease=0.05,
+                                            min_samples_leaf=2,
+                                            min_samples_split=9,
+                                            n_estimators=30, random_state=123,
+                                            subsample=0.2))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001382697E660>)
+2024-05-13 16:48:08,519:INFO:Checking exceptions
+2024-05-13 16:48:08,519:INFO:Preloading libraries
+2024-05-13 16:48:08,519:INFO:Set up data.
+2024-05-13 16:48:08,572:INFO:Set up index.
+2024-05-13 16:48:24,573:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-13 16:48:24,573:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-13 16:48:24,573:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-13 16:48:24,573:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-05-13 16:48:29,595:INFO:Initializing load_model()
+2024-05-13 16:48:29,595:INFO:load_model(model_name=Final GBC Model 02Jun2022, platform=None, authentication=None, verbose=True)
+2024-05-13 16:48:30,203:INFO:Initializing predict_model()
+2024-05-13 16:48:30,203:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000013442AF8B10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sexo', 'posse_de_veiculo',
+                                             'posse_de_imovel', 'tipo_renda',
+                                             'educacao', 'estado_civil',
+                                             'tipo_residencia'],
+                                    tra...
+                                    transformer=OneHotEncoder(cols=['tipo_renda',
+                                                                    'educacao',
+                                                                    'estado_civil',
+                                                                    'tipo_residencia'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 GradientBoostingClassifier(learning_rate=0.4, max_depth=8,
+                                            max_features='sqrt',
+                                            min_impurity_decrease=0.05,
+                                            min_samples_leaf=2,
+                                            min_samples_split=9,
+                                            n_estimators=30, random_state=123,
+                                            subsample=0.2))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x00000134499AA700>)
+2024-05-13 16:48:30,204:INFO:Checking exceptions
+2024-05-13 16:48:30,204:INFO:Preloading libraries
+2024-05-13 16:48:30,204:INFO:Set up data.
+2024-05-13 16:48:30,241:INFO:Set up index.

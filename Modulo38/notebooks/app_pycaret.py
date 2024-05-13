@@ -7,20 +7,19 @@ from io                     import BytesIO
 from pycaret.classification import load_model, predict_model
 
 
-@st.cache
+@st.cache_data
 def convert_df(df):
     return df.to_csv(index=False).encode('utf-8')
 
 # Função para converter o df para excel
-@st.cache
+@st.cache_data
 def to_excel(df):
     output = BytesIO()
     writer = pd.ExcelWriter(output, engine='xlsxwriter')
     df.to_excel(writer, index=False, sheet_name='Sheet1')
-    writer.save()
+    writer.close()
     processed_data = output.getvalue()
     return processed_data
-
 
 # Função principal da aplicação
 def main():
@@ -43,7 +42,7 @@ def main():
         df_credit = pd.read_feather(data_file_1)
         df_credit = df_credit.sample(50000)
 
-        model_saved = load_model('LR Model Aula 5 062022')
+        model_saved = load_model('Final GBC Model 02Jun2022')
         predict = predict_model(model_saved, data=df_credit)
 
         df_xlsx = to_excel(predict)
